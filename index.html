@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Subject Schedule Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #eff0f2;
+        }
+
+        .form-container {
+            width: 500px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px #888888;
+        }
+
+        .form-title {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-label {
+            display: block;
+            font-size: 18px;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        .form-input {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            color: #333;
+        }
+
+        .form-submit {
+            background: #005a9e;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .form-submit:hover {
+            background: #003e72;
+            box-shadow: 0px 0px 5px #888888;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1 class="form-title">Subject Schedule Form</h1>
+        <form>
+            <div class="form-group">
+                <label for="day" class="form-label">Subject Day:</label>
+                <select id="day" name="day" class="form-input">
+                    <option value="">-- Select day --</option>
+                    <option value="Monday">Monday</option>
+                    <option value="Tuesday">Tuesday</option>
+                    <option value="Wednesday">Wednesday</option>
+                    <option value="Thursday">Thursday</option>
+                    <option value="Friday">Friday</option>
+                    <option value="Saturday">Saturday</option>
+                    <option value="Sunday">Sunday</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="time" class="form-label">Subject Time:</label>
+                <input type="text" id="time" name="time" class="form-input" placeholder="e.g. 8:00 AM - 10:00 AM">
+            </div>
+            <div class="form-group">
+                <label for="room" class="form-label">Room:</label>
+                <input type="text" id="room" name="room" class="form-input" placeholder="e.g. Room 101">
+            </div>
+            <div class="form-group">
+                <label for="instructor" class="form-label">Instructor:</label>
+                <input type="text" id="instructor" name="instructor" class="form-input" placeholder="e.g. John Doe">
+            </div>
+            <div class="form-group">
+                <button type="submit" class="form-submit">Save</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+
+<html>
+<body style="background-color:rgb(212, 228, 157);">
